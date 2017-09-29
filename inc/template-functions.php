@@ -38,6 +38,52 @@ function tofu_pingback_header() {
 add_action( 'wp_head', 'tofu_pingback_header' );
 
 /****************************
+** Register Nav Menus
+*****************************/
+
+function tofu_register_nav_menus() {
+	register_nav_menus( array(
+		'header_menu_main' => __( 'Header Menu Main', 'tofu' ),
+		'footer_menu_main' => __('Footer Menu Main', 'tofu'),
+	));
+}
+add_action( 'after_setup_theme', 'tofu_register_nav_menus' );
+
+
+/****************************
+** Render fucntion: Header Menu - Main
+*****************************/
+
+function tofu_header_menu_main() {
+	wp_nav_menu(
+    array(
+      'theme_location' => 'header_menu_main', 
+			'menu' => 'Header Menu Main',
+			'container'  => '',
+			'menu_id'    => 'header-menu-main',
+			'menu_class'  => 'menu header-menu-main menu-ajax',
+			'after' => '<span class="expand-menu-toggle"></span>'
+      )
+    );
+}
+
+/****************************
+** Render fucntion: Footer Menu - Main
+*****************************/
+
+function tofu_footer_menu_main() {
+	wp_nav_menu(
+    array(
+    	'theme_location' => 'footer_menu_main',
+    	'menu' => 'Footer Menu Main',
+			'container'       => '',
+			'menu_id'    => 'footer-menu-main',
+			'menu_class'  => 'menu footer-menu-main menu-ajax'
+      )
+    );
+}
+
+/****************************
 ** Render Normal Image
 *****************************/
 

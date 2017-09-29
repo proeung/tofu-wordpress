@@ -14,6 +14,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<nav id="footer-site-navigation" class="footer-main-navigation" role="navigation">
+			<?php tofu_footer_menu_main();?>
+		</nav><!-- #footer-site-navigation -->
+		
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tofu' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
