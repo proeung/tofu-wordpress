@@ -22,3 +22,13 @@ Tofu is a Wordpress starter theme designed to keep things simple while providing
 7. Run `gulp` to compiled and watch your JS/CSS changes.
 
 8. Set your website's default theme.
+
+## Helper Functions ##
+
+How to render an image tag:
+
+`<?php tofu_img($image_id, $image_size = 'img_style_name'); ?>`
+
+How to render an image tag with bLazy markup and `<noscript>` tag:
+
+`<?php tofu_img_lazy($image_id, $image_size = 'img_style_name'); ?>`
