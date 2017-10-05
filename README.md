@@ -25,10 +25,10 @@ Tofu is a Wordpress starter theme designed to keep things simple while providing
 
 ## Helper Functions ##
 
-How to render an image tag:
+**How to render an image tag:**
 
 ```php
-<?php tofu_img($image_id, $image_size = 'img_style_name'); ?>
+tofu_img($image_id, $image_size = 'img_style_name');
 ```
 
 HTML Output:
@@ -36,10 +36,10 @@ HTML Output:
 <img src="" alt="" title="" width="" height="">
 ```
 
-How to render an image tag with bLazy markup and `<noscript>` tag:
+**How to render an image tag with bLazy markup and `<noscript>` tag:**
 
 ```php
-<?php tofu_img_lazy($image_id, $image_size = 'img_style_name'); ?>
+tofu_img_lazy($image_id, $image_size = 'img_style_name');
 ```
 
 HTML Output:
