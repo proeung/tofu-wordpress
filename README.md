@@ -28,7 +28,7 @@ Tofu is a Wordpress starter theme designed to keep things simple while providing
 How to render an image tag:
 
 ```php
-tofu_img($image_id, $image_size = 'img_style_name');
+<?php tofu_img($image_id, $image_size = 'img_style_name'); ?>
 ```
 
 HTML Output:
@@ -38,7 +38,9 @@ HTML Output:
 
 How to render an image tag with bLazy markup and `<noscript>` tag:
 
-`<?php tofu_img_lazy($image_id, $image_size = 'img_style_name'); ?>`
+```php
+<?php tofu_img_lazy($image_id, $image_size = 'img_style_name'); ?>
+```
 
 HTML Output:
 ``` html
