@@ -27,7 +27,9 @@ Tofu is a Wordpress starter theme designed to keep things simple while providing
 
 How to render an image tag:
 
-`<?php tofu_img($image_id, $image_size = 'img_style_name'); ?>`
+```php
+tofu_img($image_id, $image_size = 'img_style_name');
+```
 
 HTML Output:
 ``` html
